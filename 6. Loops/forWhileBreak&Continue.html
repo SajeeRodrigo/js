@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//*********************FOR LOOP***************************
+        for(i-0; i<5; i++){
+        console.log("The number is "+ i);
+    }
+    let cars = new Array("Saab","Volvo","BMW");
+
+    //Arrays
+    for(i=0; i<cars.length;i++){
+        console.log(cars[i]);
+    }
+
+    //for-loops through a block of code a number of times
+    //for/in-loops through the properties of an object
+    //for/of-loops through the values of an iterable object
+
+    //The far... in statement itterates over all enumerable properties of an
+
+    const object = {a:1, b:2, c:3};
+
+    for(const property in object){
+        console.log('${property}: ${object[property]}');
+    }
+
+
+//******************************WHILE***************************************
+
+    while(condition){
+        //code black to be executed
+    }
+
+    //First check the condition then excut the code
+
+    let i=0;
+    let text;
+    while(i<10){
+        console.log( "The number is "+ i);
+        i++;
+    }
+
+
+    do {
+        //code block to be executed
+    }while(condition);
+
+    //
+
+    do {
+        console.log( "The number is "+ i);
+        i++;
+    }while(i<10);
+
+    //**************************Break & Continue**************************************
+    for(i=0; i<10; i++){
+        if(i===3){
+            break;//break after 3 ----0  1  2 
+        }
+
+        console.log("The number is "+ i +"<br>");
+    }
+
+
+    for(i=0; i<10; i++){
+        if(i===3){
+            continue;//skip 3 and jump to 4
+        }
+        console.log("The number is "+ i +"<br>");
+    }
+    </script>
+</body>
+</html>

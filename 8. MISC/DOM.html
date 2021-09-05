@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Paragraph 1</p>
+    <p id="p2">Paragraph 2</p>
+    <a href="https:/mdbootstrap.com" id="link" class="myClass">Link</a>
+    <script>
+        const paragraphs = document.querySelectorAll("p");
+        //paragraph[0] is the first <p> element
+            //paragraph[1] is the second <p> element, etc.
+                console.log(paragraphs[0].nodeName);
+
+                const p1 = document.getElementById("p1");
+                p1.appendChild(document.createElement("b"));
+
+                p1.innerHTML = "<i>New Italic</i>";
+
+                const link = document.getElementById("link");
+                console.log(link.getAttribute("href"));
+                link.setAttribute("href", "https://mdbgo.com");
+
+                console.log(link.classList);
+                link.classList.add("my-class");
+
+                link.addEventListener("Click",(e) =>{
+                    e.preventDefault();
+                    alert("clicked!");
+                });
+
+                
+    </script>
+</body>
+</html>

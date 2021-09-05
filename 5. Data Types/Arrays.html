@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //two ways declaring array
+      //  let cars = new Array("Saab","Volvo","BMW");
+
+
+        let cars = ["Saab", "Volvo", "BMW"];
+
+        //Accessing
+        cars[0] = "Opel";
+
+        let myCars = [...cars, "Merceds"];
+
+        //Arrays are a special type of objects. The typeof operator in Javascript
+
+        //Array elements can be objects
+        //myArray[0] = Date.now;
+        //myArray[1] = myFunction;
+        //myArray[2] = myCars;
+
+        let complexCars = [
+        {
+            color:"purple",
+            type: "minivan",
+            registration: new Date("2017-01-03"),
+            capacity:7,
+        },
+        {
+            color: "red"
+        }
+    ]
+
+
+    //Array properties and Methods
+    let fruits = ["Banana", "Orange", "Apple", "Mango"];
+    
+    fruits.length;
+    
+    //Accessing last
+    var last = fruits[fruits.length-1];
+
+    fruits.push("Kiwi");//Adds a new element (Kiwi) to fruits
+
+    //The unshift() mthod adds a new elemnt to an array at the begining    
+    fruits.unshift("Kiwi");//Add a new element ("Kiwi") to fruits
+
+    fruits.pop("");//Removes the last element ("Mango") from fruits
+    fruits.shift("");//Removes the first element "Banana" from fruits
+
+    fruits.indexOf("Orange");
+
+
+    //Loops
+    let fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    // for(i=0, i< fruits.length; i++ ) {
+    //     console.log(fruit[i]);
+    // }
+
+    fruits.forEach(myFunction);
+
+    function myFunction(value, index, array){
+        console.log(value, index, array);
+    }
+    
+    //Array.map()
+    //The map() method creates a new array by performing a function an each array element
+    //The map() method does not execute the function for array elements without alues
+    //The map() method does not change the original array.
+
+    fruits.map(myFunction);
+
+    //The filter() method creattes a new array with array elements
+
+    var numbers = [45, 4, 9, 16, 25];
+    var over18 = numbers.filter(myFunction2);
+
+    function myFunction2(value, index, array){
+        return value >18;
+    }
+
+
+
+
+    </script>
+</body>
+</html>
